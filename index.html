@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Printer</title>
+
+        <!-- CSS Link  -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- Google Font Link  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"  rel="stylesheet">
+
+             <!-- Animation Link -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+<div class="background"></div>
+
+ <div class="main">
+    <h1>Table Printer</h1>
+    <label for="numtoprint">Enter a number to print a table:</label>
+    <input id="numtoprint" type="number">
+    
+    <label for="minlength">Number to start table:</label>
+    <input id="minlength" type="number">
+    
+    <label for="maxlength">Number to end table:</label>
+    <input id="maxlength" type="number">
+
+    <div class="btn">
+    <button onclick="getnumber()">Print Table</button>
+    <button onclick="refresh()">Refresh</button>
+    </div>
+
+    <p id="displayTable"></p>
+</div>
+
+
+       <!-- JavaScript Link  -->
+       <script src="./script.js"></script>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+          AOS.init();
+        </script>
+</body>
+</html>
